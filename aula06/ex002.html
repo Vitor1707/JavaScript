@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        body {
+            background-color: rgb(86, 86, 161);
+            color: white;
+            font: normal 16px Arial;
+        }
+
+        header {
+            padding: 30px 0px 0px 0px;
+            margin: 0px 0px 0px 0px;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.418);
+        }
+
+        nav {
+            padding: 1px;
+            text-align: left;
+        }
+
+        nav > a {
+            color: rgb(21, 21, 63);
+            text-decoration: none;
+            margin: 30px 10px 1px 1px;
+            transition-duration: 0.5s;
+        }
+
+        nav > a:hover {
+            background-color: rgb(21, 21, 63);
+            color: rgb(86, 86, 161);
+            border-radius: 20px 20px 0px 0px;
+            padding: 10px 10px 0px 10px;
+            }
+
+        h1 {
+            color: rgb(21, 21, 63);
+            font: bold 3em Arial;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.295);
+            margin: 0px 0px 30px 0px;
+        }
+
+        main {
+            background-color: white;
+            color: black;
+            margin: auto;
+            max-width: 800px;
+            padding: 20px;
+            border-top: 0px;
+            border-right: 1px;
+            border-bottom: 1px;
+            border-left: 1px;
+            border-radius: 0px 0px 10px 10px;
+            border-color: black;
+            border-style: solid;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.281);
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Olá Mundo!</h1>
+        <nav>
+            <a href="#">Menu</a>
+            <a href="#">Página Inicial</a>
+            <a href="#">Conteúdo</a>
+            <a href="#">Página Final</a>
+        </nav>
+    </header>
+    <main>
+        <p>Meu primeiro programa em JavaScript!!</p>
+    </main>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        window.alert('É um grande praser em te conhecer, ' + nome + '!') //concatenação
+    </script>
+</body>
+</html>

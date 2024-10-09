@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaporte</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(32, 89, 233);
+            font-weight: normal;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        header {
+           text-align: center;
+           box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.383);
+           padding: 30px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.238);
+        }
+
+        main {
+            background-color: white;
+            color: black;
+            margin: auto;
+            padding: 20px;
+            max-width: 600px;
+            min-height: 300px;
+            border: 2px solid black;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 3px 2px 9px rgba(0, 0, 0, 0.39);
+            object-position: center;
+        }
+
+        input {
+            width: 200px;
+            height: 50px;
+            margin: 0px 20px;
+            font-size: 30px;
+        }
+        
+        div {
+            margin: 20px;
+            text-align: justify;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recolhendo Passaportes</h1>
+    </header>
+    <main>
+        <input type="text" name="txtps" id="txtps">
+        <input type="button" value="Verificar" onclick="calcular()">
+        <div id="res" >
+        </div>
+    </main>
+
+    <script>
+
+        function calcular() {
+            var mrd = window.document.getElementById('txtps')
+            var país = String(mrd.value)
+            var res = window.document.getElementById('res')
+            console.log(`Você é do/a ${res}`)
+            res.innerHTML = `Você é do<strong> ${país}</strong>, sendo assim, você é <strong>Brasileiro</strong>, seja bem vindo!`
+            if (país != 'Brasil') {
+                res.innerHTML = `Você é do/a <strong>${país}</strong>, sendo assim, você é <strong>Estrangeiro</strong>, sinta-se em casa!`
+            }
+           
+        }
+    </script>
+</body>
+</html>
