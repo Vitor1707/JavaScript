@@ -32,7 +32,6 @@
             color: rgb(21, 21, 63);
             text-decoration: none;
             margin: 30px 10px 1px 1px;
-            transition-duration: 0.5s;
         }
 
         nav > a:hover {
@@ -40,6 +39,7 @@
             color: rgb(86, 86, 161);
             border-radius: 20px 20px 0px 0px;
             padding: 10px 10px 0px 10px;
+            transition-duration: 0.5s;
             }
 
         h1 {
@@ -60,9 +60,9 @@
             border-right: 1px;
             border-bottom: 1px;
             border-left: 1px;
-            border-radius: 0px 0px 10px 10px;
-            border-color: black;
             border-style: solid;
+            border-color: black;
+            border-radius: 0px 0px 10px 10px;
             box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.281);
             }
     </style>
@@ -81,13 +81,18 @@
         <p>Meu primeiro programa em JavaScript!!</p>
     </main>
     <script>
-        var n1 = Number(window.prompt('digite um número: '))
-        var n2 = Number(window.prompt('Digite outro número'))
+        var n1 = Number.parseFloat(window.prompt('Digite um número:'))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número:'))
         var s = n1 + n2
-        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
-        
-        // (Number + Number) para Concatenação
-        // (string + string) para Concatenação
+        window.alert(`À soma entre ${n1} e ${n2} é igual a: ${s}`) /* Concatenação */
+        /* number + number para adição */
+        /* string + string para concatenação */
+
+
+        /*  Number.parseInt(n) - para números inteiros
+            Number.parseFloat(n) - para números reais
+        */
+        /* window.prompt == string */
     </script>
 </body>
 </html>
