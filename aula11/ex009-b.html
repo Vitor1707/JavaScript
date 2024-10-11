@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroporto</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <div id="fiscalizacao">
+
+        <h1>FISCALIZAÇÃO DE PASSAPORTES</h1>
+        <hr>
+        <p>Insira aqui o seu passaporte</p>
+        <input type="text" name="txtpas" id="txtpas">
+        <input type="button" value="Enviar" onclick="enviar()" id="ienviar">
+        
+        <div id="res"></div>
+
+    </div>
+
+    <script>
+
+        function enviar() {
+            var p = window.document.querySelector('input#txtpas')
+            var res = window.document.querySelector('div#res')
+            var país = (p.value)
+            var r = res
+
+            if (país!='Brasil') {
+                r.innerHTML = `<p>Seja bem vindo(a)! Seu país é o(a) <strong>${país}</strong>, sendo assim, você é ESTRANGEIRO(A), Sinta-se em casa!</p>`
+            }
+
+            else {
+                r.innerHTML = `Seja bem vindo(a)! Seu país é o(a) ${país}, sendo assim, você é BRASILEIRO(A)! Bem vindo(a) de volta!`
+            }
+        }
+
+    </script>
+
+</body>
+</html>
