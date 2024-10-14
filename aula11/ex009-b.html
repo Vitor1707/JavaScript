@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <div id="fiscalizacao">
+    <form id="fiscalizacao">
 
-        <h1>FISCALIZAÇÃO DE PASSAPORTES</h1>
-        <hr>
+        <fieldset>
+            <legend>Aeroporto</legend>
+            <h1>FISCALIZAÇÃO DE PASSAPORTES</h1>
+        </fieldset>
         <p>Insira aqui o seu passaporte</p>
         <input type="text" name="txtpas" id="txtpas">
         <input type="button" value="Enviar" onclick="enviar()" id="ienviar">
         
         <div id="res"></div>
 
-    </div>
+    </form>
 
     <script>
 
@@ -28,11 +30,11 @@
             var r = res
 
             if (país!='Brasil') {
-                r.innerHTML = `<p>Seja bem vindo(a)! Seu país é o(a) <strong>${país}</strong>, sendo assim, você é ESTRANGEIRO(A), Sinta-se em casa!</p>`
+                r.innerHTML = `<p>Seja bem vindo(a)! &#x1F603 <br> Seu país é o(a) <strong>${país}</strong>, sendo assim, você é <strong>ESTRANGEIRO!</strong>, Sinta-se em casa!</p>`
             }
 
             else {
-                r.innerHTML = `Seja bem vindo(a)! Seu país é o(a) ${país}, sendo assim, você é BRASILEIRO(A)! Bem vindo(a) de volta!`
+                r.innerHTML = `Seja bem vindo(a)! &#x1F603 <br> Seu país é o(a) <strong>${país}</strong>, sendo assim, você é <strong>BRASILEIRO!</strong> Bem vindo de volta!`
             }
         }
 

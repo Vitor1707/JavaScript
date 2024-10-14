@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+:root {
+    --azul: rgb(70, 142, 236);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(70, 142, 236);
+    font: normal 16px Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header > h1 {
+    text-shadow: 2px 2px 0px rgb(30, 68, 117);
+    font-size: 3em;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 500px;
+    min-width: 300px;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.493);
+    margin: auto;
+    color: var(--azul);
+}
+
+section > div > p {
+    font: bolder 1.6em Arial;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.363);
+}
+
+section > div > p > input#txtano {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--azul);
+    background-color: white;
+    margin: 10px 0px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.212);
+}
+
+section > div > p > input#botao {
+    background-color: var(--azul);
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.24);
+}
+
+section > div#res {
+    font-size: 1.4em;
+    font-family: monospace;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.363);
+}
+
+footer {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 0px rgba(30, 68, 117, 0.671);
+}
