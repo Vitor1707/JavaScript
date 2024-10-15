@@ -1,3 +1,6 @@
+
+
+
 var c = 1
 do {
     console.log(`Passo ${c}`)
@@ -14,7 +17,7 @@ while (c <= 1000) {
 }
 */ 
 
-L
+
 /*
 console.log('Tudo bem?')
 console.log('Tudo bem?')
