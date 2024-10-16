@@ -8,7 +8,6 @@ function verificar() {
     } else {
         var fsex = window.document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
-        var r = idade
         var gênero = ''
         if (fsex[0].checked) {
             gênero = 'Homem'
