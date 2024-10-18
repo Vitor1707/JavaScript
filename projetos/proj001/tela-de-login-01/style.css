@@ -6,26 +6,107 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    background: blue;
-    height: 100vh;
+    background: url(imagens/1000_F_471947051_gmZZUmBtwoGGB7R3RPkJmdpNhJU8xiaR.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100dvh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .form-box {
-    background: green;
     width: 400px;
     height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
 }
 h1 {
     text-align: center;
-    color: #fff;
     font-size: 2em;
+    color: #fff;
 }
-.form-value {
-    pos
+.inputbox {
+    position: relative;
+    width: 310px;
+    margin: 30px 0px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: -5s;
+}
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+}
+.inputbox input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    padding: 0px 35px 0px 5px;
+    color: #fff;
+}
+.inputbox ion-icon {
+    position: absolute;
+    color: #fff;
+    right: 5px;
+    top: 20px;
+}
+.forgot {
+    display: flex;
+    justify-content: center;
+}
+.forgot label {
+    color: #fff;
+    font-size: .9em;
+}
+.forgot label input {
+    margin-right: 5px;
+}
+.forgot label a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.forgot label a:hover {
+    text-decoration: underline;
+}
+.log button {
+    margin: 20px 0px;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.register {
+    text-align: center;
+    color: #fff;
+    font-size: .9em;
+}
+.register p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover {
+    text-decoration: underline;
 }

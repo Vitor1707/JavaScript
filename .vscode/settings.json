@@ -1,0 +1,6 @@
+{
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.lineHeight": 1.7,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.renderLineHighlight": "gutter",
+}
