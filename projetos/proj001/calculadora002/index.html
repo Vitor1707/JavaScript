@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="wrapper">
+            <div class="calc">
+                <h1>Calculando</h1>
+                <div class="inputbox">
+                    <input id="num1" type="number" placeholder="Digite o primeiro número.." required>
+                </div>
+                <div class="inputbox">
+                    <input id="num2" type="number" placeholder="Digite o segundo número..." required>
+                </div>
+                <div class="operadores">
+                    <button onclick="calculou('+')">+</button>
+                    <button onclick="calculou('-')">-</button>
+                    <button onclick="calculou('x')">x</button>
+                    <button onclick="calculou('/')">/</button>
+                    <button onclick="calculou('*')">*</button>
+                    <button onclick="calculou('V')">V</button>
+                </div>
+                <div id="res">
+                    <p>Seu resultado aparecerá aqui...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
