@@ -1,0 +1,77 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(imagens/math-themed-wallpaper-presentations-offices-ai-generated-math-themed-wallpaper-presentations-offices-background-ai-324939292.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.wrapper {
+    background: transparent;
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    border: 2px solid #fff;
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.658);
+}
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px rgba(4, 21, 75, 0.5)
+}
+.inputbox {
+    position: relative;
+    width: 310px;
+    border: 1px solid #fff;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.432);
+}
+.inputbox input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+
+}
+.inputbox input::placeholder {
+    color: #fff;
+    font-size: .9em;
+}
+.operadores {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.operadores button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    margin-right: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.685);
+    color: #fff;
+}
+#res p {
+    margin-top: 20px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
