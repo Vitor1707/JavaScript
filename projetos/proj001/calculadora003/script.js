@@ -33,4 +33,5 @@ function calcular(calculadora) {
     res.innerHTML = `A resposta da sua operação é: <strong>${oper}</strong>`
     res.style.color = 'white'
     res.style.marginTop = '20px'
+    res.style.textDecoration = 'underline'
 }

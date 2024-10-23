@@ -73,5 +73,6 @@ h1 {
 #res p {
     margin-top: 20px;
     color: #fff;
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 1.3em;
 }
