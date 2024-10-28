@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="listadetarefa">
+        <h1>Lista de Tarefas</h1>
+        <div class="inputadd">
+            <input id="inputTarefa" type="text" placeholder="Digite sua Tarefa">
+            <button onclick="addTarefa()" id="btnadd" class="add">Adicionar</button>
+        </div>
+        <div id="arealista">
+           
+        </div>
+        <p>&copy; Made by: <a href="#">Vitor Lucas Soares</a></p>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
