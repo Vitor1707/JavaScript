@@ -30,3 +30,14 @@ let sum2 = (a, b) => {
 let x = sum(10, 90)
 let y = sum2(20, 30)
 
+console.log('Inicio do Programa')
+
+for(let num = 1; num <= 100; num) {
+    if(num%2 == 0) {
+        console.log(`${num} é: Par`)
+    } else {
+        console.log(`${num} é: Impar`)
+    }
+}
+
+console.log('Fim do programa')
