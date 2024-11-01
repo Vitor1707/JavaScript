@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    margin: auto auto;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+h1 {
+    font-size: 3.3em;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+}
+#main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#divtimer {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+#timer {
+    display: flex;
+    width: inherit;
+    background: rgb(46, 46, 46);
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 255, 55);
+    font-size: 3em;
+    border: 5px solid rgb(168, 168, 168);
+    border-radius: 10px;
+}
+#timer::selection {
+    background: rgb(0, 255, 55);
+    color: rgb(46, 46, 46);
+}
+#botoes {
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    background: rgb(168, 168, 168);
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.parciaisregistrados {
+    background: rgb(46, 46, 46);
+    color: rgb(0, 255, 55);
+    border-radius: 5px;
+    padding: 5px;
+
+}
