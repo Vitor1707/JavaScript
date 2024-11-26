@@ -1,0 +1,161 @@
+Projeto Prático: Criando uma Página de Apresentação Pessoal com HTML
+Agora que você aprendeu os conceitos básicos de HTML, é hora de colocar tudo na prática! Crie uma página de apresentação pessoal utilizando apenas HTML. A página deve conter:
+
+Um cabeçalho com seu nome e uma breve introdução.
+Um parágrafo explicando sobre você, suas habilidades e seus interesses.
+Uma lista ordenada com suas habilidades principais.
+Uma tabela com seus cursos ou certificações (nome, dados e instituição).
+Uma imagem sua ou de algo que representa você.
+Links para suas redes sociais ou portfólio.
+Esse projeto vai te ajudar a consolidar todos os conceitos que você aprendeu até agora. Lembre-se de usar uma boa organização, como discutimos no tópico de boas práticas!
+
+
+
+
+
+
+Projeto Prático Completo: Página de Apresentação Pessoal
+Aqui está o projeto completo que você pode usar para comparar com o seu. Siga cada etapa e tente recriar essa página em HTML:
+
+HTML->
+
+Copiar código
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Apresentação Pessoal</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Olá! Eu sou [Seu Nome]</h1>
+        <p>Bem-vindo à minha página de apresentação pessoal!</p>
+    </header>
+
+    <!-- Seção sobre mim -->
+    <section>
+        <h2>Sobre Mim</h2>
+        <p>Eu sou [Sua Profissão ou Área de Estudo] com experiência em [suas experiências ou habilidades]. Adoro aprender e compartilhar conhecimento sobre tecnologia, desenvolvimento web e muito mais!</p>
+    </section>
+
+    <!-- Lista de habilidades -->
+    <section>
+        <h2>Minhas Habilidades</h2>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Desenvolvimento Web</li>
+        </ol>
+    </section>
+
+    <!-- Tabela de cursos ou certificações -->
+    <section>
+        <h2>Cursos e Certificações</h2>
+        <table border="1">
+            <tr>
+                <th>Curso</th>
+                <th>Instituição</th>
+                <th>Data</th>
+            </tr>
+            <tr>
+                <td>Curso de HTML e CSS</td>
+                <td>Udemy</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Curso de JavaScript para Iniciantes</td>
+                <td>Coursera</td>
+                <td>2024</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Imagem -->
+    <section>
+        <h2>Minha Imagem</h2>
+        <img src="sua-imagem.jpg" alt="Foto de [Seu Nome]" width="300">
+    </section>
+
+    <!-- Links para redes sociais -->
+    <section>
+        <h2>Redes Sociais</h2>
+        <p>Me siga nas redes sociais:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/seunome" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/seunome" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/seunome" target="_blank">GitHub</a></li>
+        </ul>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+O que você precisa fazer:
+Cabeçalho :
+
+Use uma tag <header>para incluir o nome e uma breve introdução.
+Sobre mim :
+
+Crie uma seção com uma descrição sobre quem você é, suas habilidades ou o que gosta de fazer.
+Lista de Habilidades :
+
+Use uma lista ordenada ( <ol>) para mostrar suas habilidades principais.
+Tabela de Cursos :
+
+Crie uma tabela com seus cursos ou certificações, com as colunas para o nome do curso, a instituição e a data.
+Imagem :
+
+Adicione uma imagem sua ou algo que represente você, com a tag <img>, usando o atributo srcpara o caminho da imagem.
+Links para Redes Sociais :
+
+Coloque links para suas redes sociais usando a tag <a>e o atributo hrefpara direcionar o visitante às páginas.
+Rodapé :
+
+No final da página, incluindo um rodapé com informações de direitos autorais.
+Esse projeto vai ajudá-lo a consolidar o que você aprendeu até agora sobre HTML e servirá como uma ótima base para sua primeira página pessoal na web!
+
+
+
+
+
+Conteúdo do Vídeo: Criando a Página de Apresentação Pessoal em HTML
+Introdução:
+
+"Olá, pessoal! Bem-vindos ao nosso projeto prático de HTML. Hoje, vamos construir uma página de apresentação pessoal, onde vocês vão aplicar tudo o que aprenderam até agora sobre HTML."
+"Neste vídeo, vou explicar passo a passo como criar uma página que inclui cabeçalho, lista de habilidades, uma tabela de cursos, imagem e links para redes sociais."
+Passo 1: Estrutura Inicial do HTML
+
+"Vamos começar a criar uma estrutura básica do HTML. Primeiramente, criamos uma tag <!DOCTYPE html>para definir o tipo de documento, e uma tag <html>com o atributo lang="pt-br"para indicar que a página está em português."
+"Dentro de <html>, colocamos o <head>, onde vamos definir o título da página com a tag <title>."
+Passo 2: Cabeçalho e Introdução
+
+"Agora, dentro da tag <body>, vamos criar um cabeçalho com a tag <header>. Aqui, você vai colocar seu nome usando a tag <h1>, e uma breve introdução sobre você com um parágrafo, usando a tag <p>."
+Passo 3: Sobre Mim
+
+"Em seguida, vamos adicionar uma seção 'Sobre Mim' com a tag <section>. Dentro dela, colocamos um subtítulo com a tag <h2>e um parágrafo explicando quem você é, suas habilidades ou interesses."
+Passo 4: Lista de Habilidades
+
+"Agora, vamos criar uma lista ordenada de habilidades usando uma tag <ol>. Dentro dela, colocamos várias tags <li>para cada habilidade que você quiser destacar, como HTML, CSS, JavaScript e outras."
+Passo 5: Tabela de Cursos ou Certificações
+
+"Em seguida, vamos adicionar uma tabela de cursos ou certificações. Para isso, usamos a tag <table>, com as tags <tr>para linhas, <th>para cabeçalhos e <td>para os dados. Vamos colocar o nome do curso, a instituição e a dados."
+Passo 6: Imagem
+
+"Agora, vamos adicionar uma imagem. Use uma tag <img>para inserir sua foto ou qualquer imagem representativa. Lembre-se de colocar o atributo srccom o caminho da imagem e o atributo altpara uma descrição, caso a imagem não carregue."
+Passo 7: Links para Redes Sociais
+
+"Para adicionar links para suas redes sociais, usamos a tag <a>. Colocamos o endereço de cada rede no atributo hrefe, para garantir que o link abra em uma nova aba, usamos o atributo target="_blank". Vamos fazer isso para Instagram, LinkedIn e GitHub, por exemplo ."
+Passo 8: Rodapé
+
+"Por fim, criamos um rodapé simples com uma tag <footer>, onde você pode colocar um aviso de copyright ou informações adicionais sobre o seu site."
+Conclusão:
+
+"E é isso! Terminamos nossa página de apresentação pessoal. Como podem ver, com algumas tags básicas, conseguimos criar um site bem estruturado. Agora, é hora de vocês aplicarem o que aprenderam e criarem suas próprias páginas!"
+"Espero que você tenha gostado desse vídeo e, se tiver dúvidas, tenha a vontade de perguntar. Boa sorte com o projeto, e nos vemos no próximo capítulo!"
+Esse roteiro cobre toda a criação do projeto, de forma que os leitores possam acompanhar o vídeo e entender os detalhes de cada etapa.

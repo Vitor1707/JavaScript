@@ -1,0 +1,34 @@
+O que é CSS?
+Estrutura Básica de um Arquivo CSS
+Seletores e Propriedades
+Estilos de Texto e Fonte
+Cores e Fundos
+Layout com CSS: Modelo de Caixa
+Flexbox: Layout Responsivo
+Estilizando Tabelas e Listas
+Transições e Animações
+Boas Práticas e Organização do CSS
+Posicionamento de Elementos
+position: estático, relativo, absoluto, fixo, pegajoso.
+Como usar top, right, bottom, leftcom posicionamento.
+CSS Grid: Layouts Complexos
+O que é o Grid Layout e como usar.
+Exemplos de grades básicas.
+Consultas de mídia: Layout Responsivo
+Como criar designs que se adaptam a diferentes tamanhos de tela.
+Exemplos de media queries para sites responsivos.
+Pseudoclasses e Pseudoelementos
+O que são e como usar, como :hover, :focus, ::after, ::before.
+Estilizando Formulários com CSS
+Como estilizar campos de entrada, botões, seletores e mais.
+Fontes da Web e Google Fonts
+Como usar fontes personalizadas em seus sites.
+Variáveis ​​CSS: Variáveis ​​em CSS
+Como declarar e usar variáveis ​​para tornar o CSS mais dinâmico e reutilizável.
+Pré-processadores CSS (Sass, LESS)
+O que são e como utilizá-los para escrever CSS de forma mais eficiente.
+
+
+
+
+

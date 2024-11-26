@@ -1,57 +1,83 @@
 let caixaCursos = document.querySelector("#caixaCursos")
-let btn_c = [...document.querySelectorAll(".curso")]
-let c1_2 = document.querySelector("#c1_2")
 let cursos = ["HTML", "CSS", "JavaScript", "PHP", "React", "MySQL", "ReactNative"]
 let btnCursoSelecionado = document.getElementById("btnCursoSelecionado")
 let btnRemoverCurso = document.getElementById("btnRemoverCurso")
+let btnAdicionarNovoCursoAntes = document.getElementById("btnAdicionarNovoCursoAntes")
+let btnAdicionarNovoCursoDepois = document.getElementById("btnAdicionarNovoCursoDepois")
+let nomeCurso = document.getElementById("nomeCurso")
 
-cursos.map((el, chave) => {
+let indice = 1
+
+let criarNovoCurso = (curso) => {
     let novoElemento = document.createElement("div")
-    novoElemento.setAttribute("id", `c${chave}`)
+    novoElemento.setAttribute("id", `c${indice}`)
     novoElemento.setAttribute("class", "curso c1")
-    novoElemento.innerHTML = el
+    novoElemento.innerHTML = curso
 
-    let comandos = document.createElement("div")
-    comandos.setAttribute("class", "comandos")
+    let comando = document.createElement("div")
+    comando.setAttribute("class", "comando")
 
     let rb = document.createElement("input")
     rb.setAttribute("type", "radio")
-    rb.setAttribute("name", "rb_curso")
+    rb.setAttribute("name", "rb_radio")
 
-    comandos.appendChild(rb)
+    comando.appendChild(rb)
 
-    novoElemento.appendChild(comandos)
+    novoElemento.appendChild(comando)
 
-    caixaCursos.appendChild(novoElemento)
-})
-
-let radioSelecionado = () => {
-    let todosRadios = [...document.querySelectorAll("input[type=radio]")]
-    let radiosSelecionado = todosRadios.filter((ele, ind, arr) => {
-        return ele.checked
-    })
-    return radiosSelecionado[0]
+    return novoElemento
 }
 
+cursos.map((el, chave) => {
+    let novoElemento = criarNovoCurso(el)
+    caixaCursos.appendChild(novoElemento)
+    indice++
+})
+let radioSelecionado = () => {
+    let todosRadios = [...document.querySelectorAll("input[type = radio]")]
+    let radioSelecionado = todosRadios.filter((el, ind, arr) => {
+        return el.checked
+    })
+    return radioSelecionado[0]
+}
 btnCursoSelecionado.addEventListener("click", (evt) => {
     let rs = radioSelecionado()
-    if(rs != undefined) {
+    if (rs != undefined) {
         let cursoSelecionado = rs.parentNode.previousSibling.textContent
-    alert(`Curso selecionado: ${cursoSelecionado}`)
-    } else {
-        alert("Selecione um curso!")
-    }
+        alert(`Curso selecionado: ${cursoSelecionado}`)
+    } else {alert("Selecione um curso!")}
 })
 
 btnRemoverCurso.addEventListener("click", (evt) => {
     let rs = radioSelecionado()
-        if(rs != undefined) {
-            let cursoSelecionado = rs.parentNode.parentNode
-            cursoSelecionado.remove()
-    } else {
-        alert("Selecione um curso!")
-    }
+    if(rs != undefined) {
+        let cursoSelecionado = rs.parentNode.parentNode
+        cursoSelecionado.remove()
+        console.log(cursoSelecionado)
+    } else{alert("Selecione um curso!")}
 })
+btnAdicionarNovoCursoAntes.addEventListener("click", (evt) => {
+    let rs = radioSelecionado()
+    if(rs != undefined) {
+        if(nomeCurso !== ""){
+            let cursoSelecionado = rs.parentNode.parentNode
+            let novoCurso = criarNovoCurso(nomeCurso.value)
+            caixaCursos.insertBefore(novoCurso, cursoSelecionado)
+        }else{alert("Adicione um curso!")}
+    }else{alert("Selecione um curso!")}
+})
+
+btnAdicionarNovoCursoDepois.addEventListener("click", (evt) => {
+    let rs = radioSelecionado()
+    if(rs != undefined) {
+        if(nomeCurso !== "") {
+            let cursoSelecionado = rs.parentNode.parentNode
+            let novoCurso = criarNovoCurso(nomeCurso.value)
+            caixaCursos.insertBefore(novoCurso, cursoSelecionado.nextSibling)
+        }else{alert("Adicione um curso!")}
+    } else{alert("Selecione um curso!")}
+})
+
 
 // parentNode
 // ChildNodes [nodenumber]
@@ -59,3 +85,5 @@ btnRemoverCurso.addEventListener("click", (evt) => {
 // lastChild
 // nextSibling
 // previousSibling
+
+// ["HTML", "CSS", "JavaScript", "PHP", "React", "MySQL", "ReactNative"]

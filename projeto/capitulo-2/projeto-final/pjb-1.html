@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Animado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box" id="login-box">
+            <h2>Login</h2>
+            <form action="#" method="POST" id="login-form">
+                <div class="textbox">
+                    <input type="text" placeholder="Usuário" name="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Senha" name="password" required>
+                </div>
+                <button type="submit" class="btn-login">Entrar</button>
+                <p class="forgot-password"><a href="#" onclick="toggleForm('forgot-password')">Esqueci minha senha</a></p>
+                <p class="new-user"><a href="#" onclick="toggleForm('register')">Cadastrar</a></p>
+            </form>
+        </div>
+
+        <div class="forgot-password-form" id="forgot-password-form">
+            <h2>Recuperar Senha</h2>
+            <form action="#" method="POST">
+                <div class="textbox">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <button type="submit" class="btn-login">Enviar</button>
+                <p class="back-to-login"><a href="#" onclick="toggleForm('login')">Voltar ao Login</a></p>
+            </form>
+        </div>
+
+        <div class="register-form" id="register-form">
+            <h2>Cadastrar</h2>
+            <form action="#" method="POST">
+                <div class="textbox">
+                    <input type="text" placeholder="Nome de Usuário" name="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Senha" name="password" required>
+                </div>
+                <button type="submit" class="btn-login">Cadastrar</button>
+                <p class="back-to-login"><a href="#" onclick="toggleForm('login')">Voltar ao Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

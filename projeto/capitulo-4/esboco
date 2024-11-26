@@ -1,0 +1,16 @@
+Estrutura do Capítulo de Projetos
+Projeto 1: Jogo Interativo - Snake Game
+
+Objetivo: Criar um jogo clássico da cobrinha utilizando canvas.
+Habilidades Envolvidas: Manipulação do DOM, eventos de teclado, uso de canvas para renderização gráfica, lógica de jogo e loops.
+Destaque no Portfólio: Demonstra habilidade em desenvolver jogos simples com boa lógica e interatividade.
+Projeto 2: Aplicativo de Lista de Tarefas (To-Do List)
+
+Objetivo: Criar um gerenciador de tarefas completo com opções de adicionar, remover, editar e salvar tarefas no navegador.
+Habilidades Envolvidas: Uso de localStorage para armazenamento persistente, manipulação de eventos, criação de elementos dinâmicos e estilização com CSS.
+Destaque no Portfólio: Mostra capacidade de criar aplicações úteis no dia a dia e com boa usabilidade.
+Projeto 3: Dashboard com Consumo de API
+
+Objetivo: Desenvolver uma interface que consuma dados de uma API pública, exibindo informações em gráficos ou tabelas.
+Habilidades Envolvidas: Consumo de APIs usando fetch ou axio
+Destaque no Portfólio: Experimente que o desenvolvedor consegue trabalhar com dados externos e criar interfaces modernas.

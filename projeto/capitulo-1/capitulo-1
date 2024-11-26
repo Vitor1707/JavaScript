@@ -1,0 +1,488 @@
+<!-- O que é html
+
+HTML é uma linguagem de marcação que dá estrutura a uma página web. Vamos usar uma metáfora : imagine que o HTML é como o esqueleto de uma casa. Ele define onde tudo ficará, como as paredes, portas e janelas (os elementos da página), mas não se preocupa com os núcleos ou a decoração (isso fica por conta do CSS).
+
+Exemplo prático:
+HTML->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu Primeiro Site</title>
+  </head>
+  <body>
+    <h1>Bem-vindo ao meu site!</h1>
+    <p>Este é um exemplo simples de HTML.</p>
+  </body>
+</html>
+Nesse exemplo, o HTML organiza o título e o parágrafo, mas não altera a aparência nem a funcionalidade.
+
+
+--------------------------------------
+
+No VSCode, digite !e pressione Enter. Isso vai gerar automaticamente a estrutura básica do HTML.
+
+Exemplo gerado:
+
+HTML->
+
+Copiar código
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+  </body>
+</html>
+O que você deve mudar:
+Idioma: Altere o atributo lang="en"para lang="pt-br", informando que o conteúdo está em português.
+Título: No <title>, mude de “Documento” para algo mais relevante, como o título do seu site ou página. Exemplo:<title>Minha Primeira Página</title>
+Esse atalho é uma forma incrível de economizar tempo e agilizar o desenvolvimento de páginas web. Basta ajustar esses detalhes iniciais e já ter sua base pronta para começar a adicionar conteúdo!
+
+Principais Tags HTML
+Agora que já sabemos como criar a estrutura básica de um documento HTML, vamos aprofundar as principais tags que você usará para dar vida ao seu conteúdo. O HTML é composto por diversos tipos de tags, cada uma com uma função específica. Vamos conhecer o que há de mais importante!
+
+Tabelas: <table>, <tr>, <td>,<th>
+    As tabelas são um dos recursos mais utilizados para organizar dados de forma clara e estruturados em uma página web. Elas são extremamente úteis para apresentar informações como listas de preços, cronogramas, comparações, ou qualquer tipo de dados em formato tabular.
+    
+    Estrutura de uma Tabela HTML
+    A criação de uma tabela começa com a tag <table>. Dentro dela, usamos outras tags para definir as linhas e as células. A tag <tr>é usada para criar linhas dentro da tabela, enquanto <td>é usada para definir as células (ou colunas) dentro de cada linha.
+    
+    <table>: Defina uma tabela.
+    <tr>: Crie uma nova linha na tabela.
+    <td>: Cria uma nova célula dentro da linha.
+    Exemplo de tabela simples:
+    
+    HTML->
+    
+    Copiar código
+    <table>
+      <tr>
+        <td>João</td>
+        <td>25</td>
+        <td>Desenvolvedor</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>30</td>
+        <td>Designer</td>
+      </tr>
+    </table>
+    Neste exemplo, criamos uma tabela com duas linhas. Cada linha tem três células: o nome, a idade e a profissão da pessoa.
+    
+    Cabeçalhos de Tabela:<th>
+    A tag <th>é usada para criar cabeçalhos de coluna , o que torna a tabela mais legível. Por padrão, as células do cabeçalho são negritas e centralizadas .
+    
+    Exemplo de tabela com cabeçalhos:
+    
+    HTML->
+    
+    Copiar código
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Profissão</th>
+      </tr>
+      <tr>
+        <td>João</td>
+        <td>25</td>
+        <td>Desenvolvedor</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>30</td>
+        <td>Designer</td>
+      </tr>
+    </table>
+    Neste exemplo, usamos <th>para criar os títulos "Nome", "Idade" e "Profissão". Isso ajuda o usuário a entender rapidamente o que cada coluna representa. É uma boa prática sempre usar cabeçalhos para melhorar a organização.
+    
+    Tabelas Aninhadas
+    Em alguns casos, você pode querer criar uma tabela dentro de outra, ou que é chamada de tabela aninhada . Isso pode ser útil para exibir informações complexas ou desenvolvidas.
+    
+    Exemplo de tabela aninhada:
+    
+    HTML->
+    
+    Copiar código
+    <table>
+      <tr>
+        <th>Curso</th>
+        <th>Preço</th>
+      </tr>
+      <tr>
+        <td>Desenvolvimento Web</td>
+        <td>
+          <table>
+            <tr>
+              <td>Curso Completo</td>
+              <td>R$ 199</td>
+            </tr>
+            <tr>
+              <td>Curso Básico</td>
+              <td>R$ 99</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    Aqui, temos uma tabela de cursos com uma tabela aninhada mostrando diferentes pacotes e preços. Isso permite apresentar dados de forma mais organizada e complexa, mas com a mesma simplicidade do HTML.
+    
+    Dicas de Boas Práticas para Tabelas
+    Evite tabelas largas demais : se a tabela for muito grande, ela pode ser difícil de ler e interagir.
+    Use cabeçalhos para tornar a tabela mais acessível : Sempre use uma tag <th>para melhorar a legibilidade, especialmente quando a tabela tiver muitas colunas.
+    Adicionar bordas e espaçamento : Para facilitar a visualização, você pode adicionar bordas e espaçamento entre as células usando CSS.
+    Links: <a>- Conectando Páginas
+    Os links são essenciais para a navegação na web. A tag <a>é usada para criar links (ou "âncoras") que conectam uma página a outra. Com ela, você pode direcionar os usuários para diferentes páginas dentro do seu site ou até mesmo para páginas externas.
+    
+    Estrutura do Link
+    A tag <a>funciona com o atributo href, que especifica o destino do link.
+    
+    <a>: Defina o link.
+    href: Especifique o endereço da página de destino.
+    Exemplo de link simples:
+    
+    HTML->
+    
+    Copiar código
+    <a href="https://www.exemplo.com">Visite nosso site!</a>
+    Neste exemplo, ao clicar no texto "Visite nosso site!", o usuário será redirecionado para o endereço especificado no atributo href.
+    
+    Links Internos e Externos
+    Links Internos: Conectam páginas dentro do mesmo site. Para isso, você usa um caminho relativo no href.
+    
+    Exemplo:
+    
+    HTML->
+    
+    Copiar código
+    <a href="sobre.html">Sobre Nós</a>
+    Links Externos: Conecte seu site a páginas de outros sites. Usamos um endereço completo , como https://ou www.
+    
+    Exemplo:
+    
+    HTML->
+    
+    Copiar código
+    <a href="https://www.google.com">Pesquisar no Google</a>
+    Abrindo Links em Novas Guias: Atributotarget
+    O atributo target="_blank"é utilizado para fazer o link abrir em uma nova aba ou janela do navegador. Isso é útil quando você não quer que o usuário saia do seu site ao clicar em um link.
+    
+    Exemplo de link que abre em nova aba:
+    
+    HTML->
+    
+    Copiar código
+    <a href="https://www.exemplo.com" target="_blank">Visite nosso blog!</a>
+    Links de Ancoragem
+    Às vezes, você deseja criar um link que leva o usuário diretamente para uma seção específica dentro da mesma página. Isso é feito com links de ancoragem . Para isso, você define um id em um elemento e usa esse id como destino do link.
+    
+    Exemplo de link de ancoragem:
+    
+    HTML->
+    
+    Copiar código
+    <a href="#contato">Ir para o Contato</a>
+    
+    <h2 id="contato">Contato</h2>
+    Neste exemplo, ao clicar em "Ir para o Contato", o navegador rolará a página até a seção com o id="contato".
+    
+    Links com Vários Atributos
+    Além disso href, uma tag <a>também pode receber outros atributos como title(para exibir um texto quando o usuário passa o mouse sobre o link) e rel(para definir a relação do link com a página).
+    
+    Exemplo:
+    
+    HTML->
+    
+    Copiar código
+    <a href="https://www.exemplo.com" title="Clique aqui para visitar o nosso site" target="_blank" rel="noopener">Visite o nosso site!</a>
+    Neste caso, o atributo titleexibe uma dica para o usuário quando ele passa o mouse sobre o link, enquanto o rel="noopener"é uma medida de segurança ao abrir links em novas abas.
+    
+    Dicas de Boas Práticas para Links
+    Use links claros e informativos: O texto do link deve descrever claramente o que o usuário pode esperar ao clicar nele.
+    Links abertos em novos guias: Abra links externos em novos guias ( target="_blank") para que o usuário não saia do seu site.
+    Evite links quebrados: Certifique-se de que todos os links estejam funcionando corretamente, para não frustrar os usuários.
+
+    Cabeçalhos: <h1>a<h6>
+        Os títulos são usados ​​para estruturar e destacar o conteúdo de uma página. Eles têm uma ordem, variando de <h1>, o mais importante, até <h6>, o menos importante. Eles ajudam tanto na organização visual quanto no SEO (otimização para motores de busca), pois indicam ao Google quais são os detalhes principais e secundários de sua página.
+        
+        Exemplo de conectores:
+        HTML->
+        
+        Copiar código
+        <h1>O Guia Completo de Programação</h1>
+        <h2>Introdução</h2>
+        <h3>Por que aprender HTML?</h3>
+        <h4>O que você precisa saber antes de começar</h4>
+        <h5>Entendendo a Web</h5>
+        <h6>Conclusão</h6>
+        <h1>é usado geralmente para o título principal da página.
+        <h2>a<h6> são usados ​​para títulos e subseções, criando uma estrutura organizada.
+        Metáfora: Imagine que sua página é um livro , e os cabeçalhos são os títulos dos capítulos e subcapítulos . Eles indicam ao leitor o que esperar em cada parte do conteúdo.
+        
+        Boas práticas:
+        Use um único <h1>por página (normalmente o título principal).
+        Use <h2>e <h3>para organizar subcategorias de forma hierárquica.
+        Parágrafos:<p>
+        A tag <p>é usada para criar parágrafos de texto. Cada vez que você escrever uma ideia completa, deverá envolvê-la em um <p>. O HTML separa automaticamente os parágrafos com uma linha em branco para tornar o conteúdo mais legível.
+        
+        Exemplo de parágrafo:
+        HTML->
+        
+        Copiar código
+        <p>HTML é a linguagem de marcação padrão para criar páginas web. Usando HTML, podemos estruturar textos, imagens, links e outros elementos essenciais.</p>
+        Metáfora: Pense no parágrafo como uma unidade de informação , algo como uma caixa de presente com um único item (a informação) dentro. Cada parágrafo é uma ideia completa que você compartilha com o usuário.
+        
+        Boas práticas:
+        Não use tags de parágrafos para títulos ou listas.
+        Cada parágrafo deve ter uma única ideia ou conceito.
+        Imagens:<img>
+        As imagens são fundamentais para tornar seu conteúdo visualmente atraente e mais compreensível. A tag <img>é usada para inserir imagens em uma página web. Ela é auto-fechante, ou seja, não precisa de uma tag de fechamento.
+        
+        Exemplo de imagem:
+        HTML->
+        
+        Copiar código
+        <img src="imagem.jpg" alt="Descrição da imagem">
+        src: Defina o caminho para a imagem.
+        alt: forneça uma descrição alternativa da imagem, que é importante para a acessibilidade e para quando a imagem não carrega.
+        Metáfora: A tag <img>funciona como uma janela para o conteúdo visual, permitindo que o usuário veja algo além das palavras, e alté como um cartaz informativo explicando o que está sendo exibido.
+        
+        Boas práticas:
+        Sempre incluindo o atributo altpara tornar seu site acessível a todos.
+        Mantenha o tamanho das imagens otimizado para garantir que seu site não fique lento para carregar.
+        Listas: <ul>, <ol>,<li>
+        As listas são usadas para organizar itens de maneira estruturada. Existem dois tipos de listas:
+        
+        Lista não ordenada : Usada quando a ordem dos itens não importa.
+        Lista ordenada : Usada quando os itens precisam ser exibidos em uma sequência específica (numerada).
+        Exemplo de lista não ordenada:
+        HTML->
+        
+        Copiar código
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        Exemplo de lista ordenada:
+        HTML->
+        
+        Copiar código
+        <ol>
+          <li>Aprender HTML</li>
+          <li>Praticar CSS</li>
+          <li>Dominar JavaScript</li>
+        </ol>
+        Metáfora: As listas são como uma receita de bolo . Você segue os itens, seja na ordem que quiser (lista não ordenada) ou na sequência correta (lista ordenada), para alcançar o resultado final.
+        
+        Boas práticas:
+        Use listas para organizar tópicos ou etapas de um processo.
+        Prefira uma lista ordenada quando a ordem for importante (exemplo: etapas de um tutorial).
+        Revisão e Conclusão dos Elementos:
+        Agora que exploramos as tags de títulos, parágrafos, imagens e listas, você tem as ferramentas para organizar seu conteúdo de forma clara e envolvente. Aqui está um resumo rápido:
+        
+        Cabeçalhos : Estruturam e organizam seu conteúdo de maneira hierárquica, essencial para SEO e legibilidade.
+        Parágrafos : Definem-se como unidades de texto, deixando uma leitura mais fluída.
+        Imagens : Ajudam a tornar o conteúdo mais visual, melhorando a experiência do usuário.
+        Listas : Organizam informações de forma clara e objetiva, tanto em ordem quanto sem ordem.
+    
+        Tópico 5: Definição e Exemplo: href, src, alt, id,class
+        Esses atributos são essenciais para tornar a interação com os elementos HTML mais robusta e acessível. Vamos entender o que cada um faz e como usá-los de maneira eficiente.
+        
+        1. href(Referência de hipertexto)
+        O atributohref é utilizado dentro da tag <a>(link) para especificar o endereço de destino do link. Ele é responsável por conectar uma página a outra, ou até mesmo a um arquivo ou recurso.
+        
+        Exemplo de uso:
+        HTML->
+        
+        Copiar código
+        <a href="https://www.exemplo.com">Visite o Exemplo</a>
+        No código acima, o hrefdefine o link de destino. Quando o usuário clica no texto "Visite o Exemplo", ele é redirecionado para o site www.exemplo.com.
+        
+        2. src(Fonte)
+        O atributosrc é utilizado em tags de elementos como <img>e <script>, para definir a origem do conteúdo a ser carregado, como uma imagem ou um arquivo de script.
+        
+        Exemplo de uso:
+        HTML->
+        
+        Copiar código
+        <img src="imagem.jpg" alt="Imagem de exemplo">
+        As srcindicações para o caminho da imagem (seja uma URL ou um arquivo local), e a imagem será exibida na página. No caso da tag <script>, o srcespecifica o caminho para o arquivo JavaScript.
+        
+        3. alt(Texto alternativo)
+        O atributoalt é usado para fornecer uma descrição alternativa do conteúdo, como no caso de imagens. Ele é importante tanto para a acessibilidade quanto para SEO (otimização de motores de busca).
+        
+        Exemplo de uso:
+        HTML->
+        
+        Copiar código
+        <img src="logo.png" alt="Logo da Empresa">
+        Quando uma imagem não pode ser compartilhada, ou se um usuário utiliza leitores de tela, o texto alternativo ( alt) será lido, oferecendo uma descrição do que a imagem representa.
+        
+        4. id(Identificador Único)
+        O atributoid é usado para gerar um identificador exclusivo para um elemento HTML. Ele é especialmente útil para estilização CSSe manipulação com JavaScript , permitindo que você refira o elemento de maneira exclusiva.
+        
+        Exemplo de uso:
+        HTML->
+        
+        Copiar código
+        <h1 id="titulo-principal">Bem-vindo ao meu site!</h1>
+        O iddeve ser único em uma página, ou seja, não pode haver dois elementos com o mesmo id. Ele é utilizado para aplicar estilos específicos ou manipular elementos com JavaScript.
+        
+        5. class(Classe)
+        O atributoclass é utilizado para agrupar elementos com a mesma classe. Diferentemente do que acontece id, você pode usar a mesma classe em múltiplos elementos. Ela é usada para aplicar estilos em grupo e pode ser manipulada com JavaScript .
+        
+        Exemplo de uso:
+        HTML->
+        
+        Copiar código
+        <p class="paragrafo-importante">Este é um parágrafo importante.</p>
+        <p class="paragrafo-importante">Outro parágrafo importante.</p>
+        Aqui, tanto o primeiro quanto o segundo parágrafo possuem a classe paragrafo-importante, permitindo que ambos sejam estilizados da mesma maneira com CSS.
+        
+        Resumo e Conclusão
+        Esses atributos são fundamentais para a criação de páginas web interativas e bem estruturadas. Abaixo, um resumo rápido de suas funções:
+        
+        href: Defina o destino dos links.
+        src: Aponta para a origem dos arquivos (imagens, scripts, etc.).
+        alt: forneça uma descrição alternativa para imagens.
+        id: Atribui um identificador único a um elemento.
+        class: Agrupa elementos com a mesma classe para facilitar a estilização e manipulação.
+        Esses atributos são essenciais não apenas para estruturar o conteúdo, mas também para garantir que sua página seja acessível e facilmente manipulável por JavaScript. Com eles, seu site terá uma organização e funcionalidade ainda mais avançada!
+
+        Tópico 6: Como Criar um Formulário Simples de Contato (Somente HTML)
+Criar um formulário simples de contato em HTML é um processo direto, mas fundamental para coletar informações dos usuários em seu site. Vamos detalhar como fazer isso de maneira clara e sem lacunas.
+
+Estrutura Básica de um Formulário HTML
+Em HTML, usamos uma tag <form>para criar formulários. Dentro dessa tag, adicionamos diversos tipos de campos para o usuário preencher, como campos de texto, e-mail e mensagens. O HTML é responsável apenas pela estrutura do formulário. Quando o formulário para envio, os dados podem ser processados ​​por um servidor ou script, mas isso será abordado nas etapas posteriores.
+
+Exemplo de Formulário de Contato Simples
+Aqui está um exemplo de formulário básico em HTML, que inclui campos para nome, e-mail e mensagem:
+
+HTML->
+
+Copiar código
+<form action="processar.php" method="POST">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" required>
+
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="mensagem">Mensagem:</label>
+  <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+  <input type="submit" value="Enviar">
+</form>
+Explicando o Código Passo a Passo:
+Uma etiqueta<form> :
+
+A tag <form>envolve todos os campos que o usuário precisa preencher.
+O atributoaction define o local onde os dados do formulário serão enviados quando o formulário for enviado. Nesse exemplo, os dados seriam enviados para um script PHP chamado "processar.php". Esse arquivo (que você criaria) receberia e processaria os dados do formulário.
+O atributomethod="POST" especifica o método que será usado para enviar os dados. O método POST é geralmente utilizado para enviar dados de formulários de maneira segura.
+Campo Nome (Entrada de Texto) :
+
+HTML->
+
+Copiar código
+<input type="text" id="nome" name="nome" required>
+type="text": Esse campo permite que o usuário digite texto.
+id="nome": O atributo idé usado para associar o rótulo ao campo de entrada. Isso permite que, quando o usuário clicar no texto "Nome", o cursor vá automaticamente para o campo de entrada.
+name="nome": Esse é o nome do campo que será enviado ao servidor junto com os dados. O nome é importante porque é como o servidor identificará o dado enviado.
+required: Este atributo significa que o campo é obrigatório, ou seja, o formulário não será enviado se o campo estiver vazio.
+Campo E-mail (Entrada de E-mail) :
+
+HTML->
+
+Copiar código
+<input type="email" id="email" name="email" required>
+type="email": Esse campo é específico para e-mails. O navegador pode validar o formato do e-mail (com "@" e ".com", por exemplo).
+Assim como o campo de nome, tem um id, name, e o atributo requiredpara garantir que o usuário forneça um e-mail válido.
+Área de Texto (Textarea) para a Mensagem :
+
+HTML->
+
+Copiar código
+<textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+<textarea>: Esta tag cria um campo de texto maior para que o usuário possa digitar uma mensagem longa.
+rows="4": O atributo rowsdefine a altura da área de texto, em número de linhas visíveis.
+required: Torna este campo obrigatório também.
+Botão de Enviar :
+
+HTML->
+
+Copiar código
+<input type="submit" value="Enviar">
+type="submit": Este tipo de campo cria um botão que, quando clicado, envia os dados do formulário.
+value="Enviar": O texto exibido no botão é "Enviar". O valor pode ser personalizado conforme necessário.
+Compreendendo a Funcionalidade do Formulário:
+Quando o usuário preenche os campos e clica em "Enviar", os dados são enviados ao servidor de acordo com o que foi definido no atributo action(no exemplo, processar.php).
+Os campos name="nome", name="email", e name="mensagem"são importantes porque permitem que o servidor acesse o valor de cada campo. No exemplo, se o usuário preencheru "João" no campo "Nome", o servidor receberia algo como:
+texto
+
+Copiar código
+nome=João
+email=joao@email.com
+mensagem=Olá, tenho uma dúvida sobre seu produto.
+No exemplo dado, requiredé usado para garantir que o usuário não deixe nenhum campo em branco. Quando o campo for deixado vazio, o navegador mostrará um aviso solicitando que você o preenchê-lo antes de enviar o formulário.
+Conclusão
+Criar um formulário simples de contato em HTML é relativamente fácil, mas é muito importante entender o papel de cada atributo e tag envolvidos. Esse formulário básico, com campos para nome, e-mail e mensagem, permite que o usuário entre em contato com você. No entanto, lembre-se de que, em HTML, apenas a estrutura do formulário é criada. A parte de processamento (como enviar os dados para um servidor) será feita com outras tecnologias, como PHP ou JavaScript, mas isso será explorado mais adiante.
+
+Neste ponto, você já tem as ferramentas fáceis para criar um formulário de contato funcional e simples, com base apenas em HTML! 
+
+Tópico 7: Comentários em HTML
+Os comentários são uma parte fundamental na organização e manutenção do código em HTML. Embora não sejam aplicáveis ​​no navegador, eles são visíveis para qualquer pessoa que leia o código-fonte da página. Vamos aprender como adicioná-los corretamente e entender por que eles são tão importantes.
+
+Como Adicionar Comentários em HTML
+Em HTML, os comentários são acrescentados com a seguinte sintaxe:
+
+HTML->
+
+Copiar código
+<!-- Este é um comentário em HTML -->
+O que acontece aqui é que qualquer texto entre as tags <!--será -->tratado como um comentário. Esses comentários não são exibidos no navegador e são ignorados pelo HTML. O código é apenas “anotado” para quem está desenvolvendo ou revisando o código.
+
+Exemplo de Comentários no Código
+Aqui está um exemplo de como você pode adicionar comentários no seu código HTML:
+
+HTML->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+</head>
+<body>
+    <!-- Aqui começa o conteúdo da página -->
+    <h1>Bem-vindo ao meu site!</h1>
+    <p>Este é um parágrafo de introdução.</p>
+
+    <!-- Comentário explicando o código -->
+    <div>
+        <!-- Este é um bloco de conteúdo com um título e um parágrafo -->
+        <h2>Informações importantes</h2>
+        <p>Detalhes sobre o conteúdo da página.</p>
+    </div>
+
+    <!-- Fim do conteúdo -->
+</body>
+</html>
+No exemplo acima, os comentários foram inseridos entre as tags <!--e -->, e podem ser vistos por qualquer pessoa que abrir o código-fonte da página. Isso ajuda a explicar o que o código está fazendo, facilitando a manutenção e compreensão do código por outras pessoas (ou até mesmo por você no futuro).
+
+Importância dos Comentários na Organização do Código
+Embora os comentários não afetem a funcionalidade do código, eles são essenciais para a organização e clareza . Aqui estão algumas razões pelas quais você deve sempre usar comentários:
+
+Facilitamos a manutenção : Comentários ajudam outros desenvolvedores (ou você mesmo) a entender o que foi feito em uma parte específica do código, sem precisar interpretar linha por linha.
+
+Melhor compreensão para quem revisa o código : Se alguém mais revisar o seu código, os comentários irão explicar o que está acontecendo em cada parte, tornando o processo de revisão muito mais fácil.
+
+Evitar confusão em projetos grandes : Em sites maiores ou projetos com muitos arquivos, pode ser difícil lembrar o que cada seção do código faz. Os comentários podem ajudar a identificar rapidamente, especificamente de cada parte do código, especialmente quando você volta a trabalhar no código depois de algum tempo.
+
+Documentação para futuras modificações : Se o código for alterado ou atualizado, os comentários ajudam a garantir que qualquer pessoa que faça mudanças no futuro entenda rapidamente os interesses originais.
+

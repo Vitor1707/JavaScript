@@ -1,0 +1,103 @@
+Introdução ao JavaScript
+
+O que é o JavaScript
+Como o JavaScript se conecta ao HTML e CSS
+Diferença entre JavaScript e outras linguagens de programação
+Estrutura Básica do JavaScript
+
+Tags de script e formas de incluir o JS
+Estrutura de um arquivo JavaScript
+Variáveis ​​e Tipos de Dados
+
+var, let, conste suas diferenças
+Tipos de dados básicos (string, número, booleano, nulo, indefinido, etc.)
+Conversão de tipos (Type Coercion)
+Operadores e Expressões
+
+Operadores aritméticos, lógicos, de comparação e ternários
+Precedência de operadores
+Operadores avançados (desestruturação, spread/rest)
+Controle de Fluxo
+
+Condicionais: if, else,switch
+Laços de repetição: for, while,do while
+Exceções e try-catch
+Funções
+
+Declaração de funções (normais, anônimas, de flecha)
+Funções de ordem superior (retornos de chamada, mapa, filtro, redução)
+Parâmetros e retorno de valores
+Objetos e Arrays
+
+Trabalhando com objetos (propriedades e métodos)
+Arrays e suas operações (map, forEach, find, etc.)
+Métodos de manipulação de dados em arrays e objetos
+Manipulação do DOM
+
+Como acessar e modificar elementos da página HTML
+Manipulação de eventos (cliques, teclas, etc.)
+Atualização de conteúdo (innerHTML, textContent, etc.)
+Criação e remoção de elementos sonoros
+Eventos e Interatividade
+
+Tipos de eventos e como usá-los (clique, passe o mouse, etc.)
+Adicionando eventos comaddEventListener()
+Eventos de formulário e validação de entradas
+Programação Assíncrona
+
+O que é código assíncrono
+setTimeout, setIntervale retornos de chamada
+Promessas easync/await
+Introdução a APIs externas (exemplo com fetch)
+Manipulação de Arrays e Objetos Avançados
+
+Métodos como map(), reduce(), filter(), some(),every()
+Desestruturação de arrays e objetos
+Introdução ao JSON e como trabalhar com dados JSON
+JSON (Notação de Objeto JavaScript)
+
+O que é JSON
+Como manipular dados em formato JSON
+Conversão entre objetos JavaScript e JSON
+Es6 e Funcionalidades Modernas
+
+Funções de seta
+Literais de modelo
+Classes e módulos
+Assíncrono/aguardar
+Desenvolvimento de Projetos com JavaScript
+
+Estruturação de um projeto básico (exemplo de jogo)
+Utilizando localStorage e sessionStorage
+Introdução a APIs do navegador (como geolocalização, câmera, etc.)
+Programação Orientada a Objetos (OOP)
+
+Conceitos de aulas e objetos
+Herança e encapsulamento
+Métodos e propriedades estáticas
+Exemplos práticos de OOP em JS
+Ferramentas e Frameworks
+
+Introdução ao Node.js
+Manipulação de pacotes com NPM
+Bibliotecas populares (React, Vue.js)
+Testes e Depuração
+
+Como depurar seu código JavaScript
+Ferramentas de teste (Jest, Mocha)
+Como testar escrever para JavaScript
+Boas Práticas de JavaScript
+
+Código Limpo e organização de código
+Convenções de nomenclatura
+Modularização e reutilização de código
+Criação de um Jogo Simples com JavaScript
+
+Estruturação do jogo
+Manipulação de eventos (movimento, pontuação)
+Lógica do jogo (condições, fases, vitória/perda)
+Como otimizar e melhorar o código
+Implantação de Projetos
+
+Como colocar seu projeto JavaScript online (GitHub, Netlify)
+Gerenciamento de versão com Git
